@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: plain-page
 title: Categories
 header: Posts By Category
 group: navigation
@@ -11,12 +11,17 @@ group: navigation
   {% include JB/categories_list %}
 </ul>
 
+<div class="category-container">
+{% for category in site.categories %}
+  <div class="category-item">
+    <span id="{{ category[0] }}-ref" class="category-item-title">{{ category[0] | join: "/" }}</span>
+    <div class="category-item-content">
+      <ul>
+        {% assign pages_list = category[1] %}
+        {% include JB/pages_list %}
+      </ul>
+    </div>
+  </div>
 
-{% for category in site.categories %} 
-  <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
-  <ul>
-    {% assign pages_list = category[1] %}  
-    {% include JB/pages_list %}
-  </ul>
 {% endfor %}
-
+</div>

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: plain-page
 title : Archive
 header : Post Archive
 group: navigation
@@ -7,4 +7,6 @@ group: navigation
 {% include JB/setup %}
 
 {% assign posts_collate = site.posts %}
+<div class="timeline-container">
 {% include JB/posts_collate %}
+</div>
