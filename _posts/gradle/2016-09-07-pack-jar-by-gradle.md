@@ -6,6 +6,7 @@ category: lessons
 tags : [android, gradle, groovy, pack jar]
 ---
 {% include JB/setup %}
+敬请期待
 
 ## 打包可运行jar
 
