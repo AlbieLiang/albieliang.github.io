@@ -35,7 +35,7 @@ tags : [tools, android, java, arbitrarygen, code generator, hybrid mode, templat
 
 #### 1、数据源：
 数据源是以.hybrids-define为后缀的文件，文件格式是XML，其中二级节点作为数据源的元数据；
-（数据源文件的位置将在后面的“3、在项目中引入方法”说明）
+（数据源文件的位置是通过配置想决定的，可以参考[ArbitraryGen首页]({{ site.baseurl }}/tools/2016/07/22/arbitrarygen-home-page)）
 
 示例如下：
 
