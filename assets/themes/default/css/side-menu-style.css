@@ -1,0 +1,153 @@
+/* Custom container */
+
+.author-banner {
+  width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.author-avatar {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100px;
+  height: 100px;
+  box-shadow: -3px 0 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid #6E7173;
+}
+
+.side-menu {
+  float: right;
+  position: fixed;
+  bottom: 0px;
+  top: 0px;
+  width: 340px;
+  height: 100%;
+  background: #303538;
+  box-shadow: -3px 0 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  z-index: 4;
+  right: -340px;
+  padding: 50px 0px 40px 0px;
+  color:#999;
+}
+
+.link-out-block {
+  margin-top: 30px;
+}
+
+.side-menu hr {
+  border: 1px #777;
+  border-style: inset;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.link-out-row {
+  margin-top: 2px;
+  font-size: 16px;
+}
+
+.link-out-row a {
+  color: #ddd;
+  opacity: 0.5;
+  padding-bottom: 3px;
+  text-decoration: none;
+  margin: 2px;
+}
+
+.link-out-row a:hover {
+  opacity: 1.0;
+  border-bottom: 1px solid #ddd;
+}
+
+.link-out-row a:active {
+  opacity: 1.0;
+  border-bottom: 1px solid #ddd;
+}
+
+/*.post-content {
+  float: right;
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}*/
+
+.link-back2top {
+    bottom: 35px;
+    height: 32px;
+    position: fixed;
+    width: 32px;
+    z-index: 3;
+    right: 50px;
+    /*margin-right: -480px;*/
+}
+.link-back2top a {
+    background: url(bg_top.png) no-repeat scroll 13px center #D6D6D6;
+    border-radius: 32px 32px 32px 32px;
+    display: block;
+    font-size: 0;
+    height: 32px;
+    line-height: 0;
+    overflow: hidden;
+    width: 32px;
+}
+.link-back2top a:hover {
+    background-color: #C62627;
+}
+
+
+.link-more {
+    bottom: 70px;
+    height: 32px;
+    position: fixed;
+    width: 32px;
+    z-index: 5;
+    right: 50px;
+    /*margin-right: -480px;*/
+}
+.link-more span {
+    background: url(more.png) no-repeat scroll center #D6D6D6;
+    border-radius: 32px 32px 32px 32px;
+    display: block;
+    font-size: 0;
+    height: 32px;
+    line-height: 0;
+    overflow: hidden;
+    width: 32px;
+    background-clip: content-box;
+    background-size: 20px 20px;
+}
+.link-more span:hover {
+    background-color: #B6B6B6;
+}
+
+.menu-post-content {
+  width: 100%;
+}
+.menu-post-title {
+  color: #aaa;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  /*padding: 1px 3px 1px 3px;*/
+}
+
+.menu-post-title:hover {
+  background-color: #888;
+  color: white;
+}
+
+.menu-post-title:active {
+  background-color: #888;
+  color: white;
+}
+
+.menu-post-title a {
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+  font-size: 14px;
+
+}

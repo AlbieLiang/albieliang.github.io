@@ -1,0 +1,95 @@
+
+.timeline-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 1170px;
+
+  position: relative;
+  margin-left: 40px;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  width: 4px;
+  height: 100%;
+  background: #f5f5f5;
+}
+.timeline-container h2,.timeline-container h3 {
+  margin-left: 40px;
+  align-content: center;
+  color: #555555;
+}
+
+.timeline-container h2 {
+  font-size: 2em;
+}
+
+.timeline-container h3 {
+  font-size: 1.5em;
+  margin-top: : 2em;
+}
+
+.timeline-container ul {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+.timeline-container p {
+  width: 100%;
+  height: 3em;
+}
+
+.timeline-container ul li a {
+    color: #777777;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.timeline-container ul li a:hover {
+    color: #444444;
+}
+
+.timeline-container ul li span {
+    color: #555555;
+    font-size: 0.8em;
+    background-color: #CCCCCC;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 2px 4px 2px 4px;
+    margin-left: 5px;
+}
+
+.timeline-container h2::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  margin-top: 8px;
+  width: 16px;
+  height: 16px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  border-color: #aaaaaa;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.timeline-container h3::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  margin-top: 6px;
+  width: 12px;
+  height: 12px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background: #f5f5f5;
+  border-color: #aaaaaa;
+  border-width: 4px;
+  border-style: solid;
+}

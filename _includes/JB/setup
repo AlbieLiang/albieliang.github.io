@@ -17,11 +17,19 @@
     {% if site.JB.ASSET_PATH %}
       {% assign ASSET_PATH = site.JB.ASSET_PATH %}
     {% else %}
-      {% if layout.theme.name %}
-      {% capture ASSET_PATH %}{{ BASE_PATH }}/assets/themes/{{ layout.theme.name }}{% endcapture %}
-      {% else %}
-      {% capture ASSET_PATH %}{{ BASE_PATH }}/assets/themes/{{ page.theme.name }}{% endcapture %}
-      {% endif %}
-    {% endif %}  
+      {% capture ASSET_PATH %}{{ BASE_PATH }}/assets{% endcapture %}
+    {% endif %}
+
+    {% if layout.theme.name %}
+      {% assign THEME = layout.theme.name %}
+    {% elsif page.theme.name %}
+      {% assign THEME = page.theme.name %}
+    {% elsif site.JB.THEME %}
+      {% assign THEME = site.JB.THEME %}
+    {% else %}
+      {% assign THEME = "default" %}
+    {% endif %}
+
+    {% capture THEME_PATH %}{{ ASSET_PATH }}/themes/{{ THEME }}{% endcapture %}
   {% endif %}
 {% endcapture %}{% assign jbcache = nil %}

@@ -1,0 +1,40 @@
+.category-container {
+  width: 100%;
+  display: inline-block;
+  margin-top: 30px;
+}
+.category-item {
+  width: 100%;
+  display: inline-block;
+  margin-top: 20px;
+}
+.category-item-title {
+  font-size: 2em;
+  float: left;
+  width: 20%;
+  padding-right: 20px;
+  text-align: right;
+  text-overflow: ellipsis;
+}
+.category-item-content {
+  float: right;
+  display: inline-block;
+  right: 100%;
+  width: 80%;
+  border-left: 1px solid #CCC;
+}
+.category-item-content ul {
+  list-style-type: none;
+  text-overflow: ellipsis;
+}
+.category-item-content ul li a {
+  color: #777777;
+  font-size: 1em;
+  text-decoration: none;
+}
+.category-item-content ul li a:active {
+  color: #AAA;
+}
+.category-item-content ul li a:hover {
+  color: #444444;
+}
