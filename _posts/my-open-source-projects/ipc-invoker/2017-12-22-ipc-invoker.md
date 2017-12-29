@@ -79,7 +79,7 @@ Android系统直接提供的AIDL和Messenger的方式存在的一些问题：
 
 最初设计IPCInvoker就是为了解决AIDL和Messenger存在的问题，让跨进程调用变得更简单。下面我们来看看IPCInvoker是如何做跨进程调用的。
 
-![Messenger调用模型图]({{ ASSET_PATH }}/images/ipcinvoker/ipcinvoker-ipc.jpg)
+![IPCInvoker调用模型图]({{ ASSET_PATH }}/images/ipcinvoker/ipcinvoker-ipc.jpg)
 
 从IPCInvoker调用模型图中，可以看出是AIDL的一个扩展，Service端作为Task执行的容器，而由调用者来决定Task的逻辑实现。下面一起看一下IPCInvoker的简单使用。
 
