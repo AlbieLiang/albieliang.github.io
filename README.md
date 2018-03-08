@@ -4,7 +4,7 @@
 
 #### 个人简介：
 
-Albie Liang，屌丝攻城狮，Android，Coding，Innovator...
+Albie Liang，敲着代码的文艺青年...
 
 
 #### 愿景：
